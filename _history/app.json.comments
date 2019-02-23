@@ -1,0 +1,10 @@
+Comments for app.json:
+
+"permissions": [
+  "CAMERA",
+  "CAMERA_ROLL",
+  "READ_EXTERNAL_STORAGE",
+  "WRITE_EXTERNAL_STORAGE"
+],
+The definition of permissions is based on
+ https://forums.expo.io/t/resolved-camera-wont-start-on-standalone-android-app/9998

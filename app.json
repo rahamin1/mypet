@@ -1,0 +1,76 @@
+{
+  "expo": {
+    "name": "My Pet",
+    "description": "All the important information about my Pet",
+    "slug": "mypet",
+    "privacy": "public",
+    "sdkVersion": "31.0.0",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "version": "0.42",
+    "orientation": "default",
+    "icon": "./assets/images/icon.png",
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yossiglass.mypet",
+      "splash": {
+        "image": "./assets/images/splash-ios.png",
+        "tabletImage": "./assets/images/splash-ios-tablet.png",
+        "resizeMode": "cover",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "android": {
+      "package": "com.yossiglass.mypet",
+      "versionCode": 1,
+      "permissions": [
+        "CAMERA",
+        "CAMERA_ROLL",
+        "READ_INTERNAL_STORAGE",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "splash": {
+        "ldpi": "./assets/images/splash.png",
+        "mdpi": "./assets/images/splash.png",
+        "hdpi": "./assets/images/splash.png",
+        "xhdpi": "./assets/images/splash.png",
+        "xxhdpi": "./assets/images/splash.png",
+        "xxxhdpi": "./assets/images/splash.png",
+        "tabletImage": "splash-android-tablet.png",
+        "resizeMode": "cover",
+        "backgroundColor": "#ffffff"
+      },
+      "icon": "./assets/images/icon.png",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/icon-oreo.png",
+        "backgroundColor": "#15b3bf"
+      }
+    }
+  },
+  "hooks": {
+    "postPublish": [
+      {
+        "file": "sentry-expo/upload-sourcemaps",
+        "config": {
+          "organization": "self-dm",
+          "project": "mypet",
+          "authToken": "0ca29a9ed2e84e86bbac3e0e81b6e1ac208cf77f08ef48f9b28732d028e50cf6"
+        }
+      }
+    ]
+  }
+}
